@@ -1,0 +1,41 @@
+# Security Rules (Functions) Progress
+
+This checklist is automatically updated by `scripts/sync-progress.ts`.
+
+## Request Rules
+- [x] REQ-001: API key or secret in URL query parameter
+- [ ] REQ-002: Password in URL query parameter
+- [ ] REQ-003: AWS credential pattern detected
+- [ ] REQ-004: Authorization token sent over plain HTTP
+- [ ] REQ-005: Private key pattern in request body
+
+## Response Rules
+- [ ] RES-001: Stack trace in response body
+- [ ] RES-002: Internal server paths exposed
+- [ ] RES-003: Auth endpoint returns sensitive fields
+- [ ] RES-004: Response contains excessive user PII
+- [ ] RES-005: DB internals leaked
+- [ ] RES-006: Server technology fingerprint
+- [ ] RES-007: Response returns full DB row on login/profile
+
+## Header Rules
+- [ ] HDR-001: Missing HSTS
+- [ ] HDR-002: Missing CSP
+- [ ] HDR-003: Missing X-Content-Type-Options
+- [ ] HDR-004: Missing X-Frame-Options
+- [ ] HDR-005: X-Powered-By or Server header reveals stack
+
+## JWT Rules
+- [ ] JWT-001: alg: none
+- [ ] JWT-002: missing exp claim
+- [ ] JWT-003: sensitive PII in payload
+- [ ] JWT-004: sent over plain HTTP
+
+## Cookie Rules
+- [ ] COK-001: missing Secure flag
+- [ ] COK-002: missing HttpOnly flag
+- [ ] COK-003: missing SameSite attribute
+
+## TLS Rules
+- [ ] TLS-001: HTTPS endpoint falls back to HTTP redirect
+- [ ] TLS-002: Certificate pinning detected
