@@ -28,7 +28,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![React Native](https://img.shields.io/badge/React_Native-0.73-61DAFB.svg)](https://reactnative.dev/)
-[![Security Rules](https://img.shields.io/badge/Security_Rules-1/26-critical)](FUNCTIONS_PROGRESS.md)
+[![Security Rules](https://img.shields.io/badge/Security_Rules-1/26-critical)](backend/FUNCTIONS_PROGRESS.md)
 
 **MobileGuard** is a no-root mobile HTTP traffic inspector and passive security scanner for Android and iOS. Built with React Native, it combines a local MitM proxy with a powerful security rule engine to identify vulnerabilities in mobile app traffic in real-time.
 
@@ -86,20 +86,14 @@ graph TD
 ```bash
 git clone https://github.com/yourusername/MobileGuard.git
 cd MobileGuard
-npm install
+# Install backend dependencies
+cd backend && npm install
+# Install frontend dependencies
+cd ../frontend && npm install
 ```
 
 ### Running the App
-```bash
-# Start Metro
-npm start
-
-# Run on Android
-npm run android
-
-# Run on iOS
-npm run ios
-```
+Refer to the README in each subdirectory for specific instructions.
 
 ---
 
@@ -154,16 +148,12 @@ Below is the current status of the security rule implementation. This section is
 
 ```
 /
-├── android/          # Native Android VPN implementation
-├── ios/              # Native iOS Proxy implementation
-├── src/
-│   ├── bridge/       # Native module wrappers
-│   ├── engine/
-│   │   ├── security/ # Rule engine & SecurityRule definitions
-│   │   └── parser/   # HTTP parsers
-│   ├── components/   # UI Components
-│   └── store/        # Zustand state management
-└── scripts/          # Automation scripts
+├── backend/          # Backend Engine & Security Rules
+│   ├── src/          # Source code
+│   ├── scripts/      # Automation scripts
+│   └── package.json  # Backend dependencies
+├── frontend/         # React Native Frontend
+└── README.md         # This file
 ```
 
 ---

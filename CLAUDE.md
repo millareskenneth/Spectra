@@ -35,33 +35,19 @@ clarity, and safety of sensitive data are non-negotiable.
 
 ```
 /
-├── android/
-│   └── app/src/main/java/com/mobileguard/
-│       ├── vpn/          ← VpnService, TUN interface, ProxyEngine.kt
-│       └── bridge/       ← RN Native Module bridge
-├── ios/
-│   ├── MobileGuard/
-│   └── NetworkExtension/ ← NEAppProxyProvider target
-├── src/
-│   ├── bridge/           ← JS-side native module wrappers
-│   ├── engine/
-│   │   ├── parser/       ← HTTP request/response parsers
-│   │   ├── security/     ← Rule engine, all SecurityRule definitions
-│   │   └── storage/      ← SQLite + MMKV adapters
-│   ├── screens/
-│   │   ├── RequestListScreen.tsx
-│   │   ├── RequestDetailScreen.tsx
-│   │   ├── SecurityReportScreen.tsx
-│   │   └── SettingsScreen.tsx
-│   ├── components/
-│   │   ├── RequestRow.tsx
-│   │   ├── BodyViewer.tsx
-│   │   ├── HeadersTable.tsx
-│   │   ├── SecurityBadge.tsx
-│   │   └── RuleMatchCard.tsx
-│   └── store/            ← Zustand stores
-├── CLAUDE.md             ← (this file)
-└── .mcp.json             ← MCP server config
+├── backend/          ← Backend Engine (Rules, Parsers, Storage)
+│   ├── src/
+│   │   ├── engine/
+│   │   ├── bridge/
+│   │   ├── screens/
+│   │   ├── components/
+│   │   └── store/
+│   ├── scripts/
+│   ├── package.json
+│   └── ...
+├── frontend/         ← Frontend UI (React Native Project)
+├── CLAUDE.md
+└── README.md
 ```
 
 ---
@@ -247,24 +233,21 @@ A feature is done when:
 
 ## Commands
 
+### Backend
 ```bash
-# Start Metro bundler
-yarn start
+cd backend
+npm test                # Run security rule tests
+npm run sync-progress   # Sync rule progress to README
+npm run lint           # Lint backend code
+npm run tsc            # Type check backend
+```
 
-# Run on Android
-yarn android
-
-# Run on iOS
-yarn ios
-
-# TypeScript check
-yarn tsc --noEmit
-
-# Run security rule tests
-yarn test src/engine/security/
-
-# Build release APK
-yarn android --mode=release
+### Frontend (React Native)
+```bash
+cd frontend
+npm start               # Start Metro bundler
+npm run android        # Run on Android
+npm run ios            # Run on iOS
 ```
 
 ---
