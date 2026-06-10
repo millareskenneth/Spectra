@@ -1,7 +1,6 @@
-import * as fs from 'fs';
-import * as path from 'path';
+const fs = require('fs');
+const path = require('path');
 
-// Use process.cwd() to be environment-agnostic (ESM or CJS)
 const PROJECT_ROOT = process.cwd();
 const PROGRESS_FILE = path.join(PROJECT_ROOT, 'FUNCTIONS_PROGRESS.md');
 const README_FILE = path.join(PROJECT_ROOT, 'README.md');
