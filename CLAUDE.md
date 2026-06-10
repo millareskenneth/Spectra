@@ -34,20 +34,15 @@ clarity, and safety of sensitive data are non-negotiable.
 ## Project Structure
 
 ```
-/
-├── backend/          ← Backend Engine (Rules, Parsers, Storage)
-│   ├── src/
-│   │   ├── engine/
-│   │   ├── bridge/
-│   │   ├── screens/
-│   │   ├── components/
-│   │   └── store/
-│   ├── scripts/
-│   ├── package.json
-│   └── ...
-├── frontend/         ← Frontend UI (React Native Project)
+/ (Spectra - Backend)
+├── src/
+│   └── engine/
+├── scripts/
+├── package.json
 ├── CLAUDE.md
 └── README.md
+
+../Spectra Frontend/  ← Frontend UI (React Native Project)
 ```
 
 ---

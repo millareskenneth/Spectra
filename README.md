@@ -28,7 +28,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![React Native](https://img.shields.io/badge/React_Native-0.73-61DAFB.svg)](https://reactnative.dev/)
-[![Security Rules](https://img.shields.io/badge/Security_Rules-1/26-critical)](backend/FUNCTIONS_PROGRESS.md)
+[![Security Rules](https://img.shields.io/badge/Security_Rules-1/26-critical)](FUNCTIONS_PROGRESS.md)
 
 **MobileGuard** is a no-root mobile HTTP traffic inspector and passive security scanner for Android and iOS. Built with React Native, it combines a local MitM proxy with a powerful security rule engine to identify vulnerabilities in mobile app traffic in real-time.
 
@@ -84,12 +84,14 @@ graph TD
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/MobileGuard.git
-cd MobileGuard
-# Install backend dependencies
-cd backend && npm install
-# Install frontend dependencies
-cd ../frontend && npm install
+# Clone and install backend
+git clone https://github.com/millareskenneth/Spectra.git
+cd Spectra && npm install
+
+# Clone and install frontend (in a sibling directory)
+cd ..
+git clone https://github.com/millareskenneth/it-asset-inventory-mobile.git "Spectra Frontend"
+cd "Spectra Frontend" && npm install
 ```
 
 ### Running the App
@@ -147,13 +149,14 @@ Below is the current status of the security rule implementation. This section is
 ## 📁 Project Structure
 
 ```
-/
-├── backend/          # Backend Engine & Security Rules
-│   ├── src/          # Source code
-│   ├── scripts/      # Automation scripts
-│   └── package.json  # Backend dependencies
-├── frontend/         # React Native Frontend
+Spectra/              # Backend Repository
+├── src/              # Source code
+├── scripts/          # Automation scripts
+├── package.json      # Backend dependencies
 └── README.md         # This file
+
+Spectra Frontend/     # Frontend Repository (Sibling Directory)
+└── ...               # React Native Project
 ```
 
 ---
