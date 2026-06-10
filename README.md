@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## 📋 Table of Contents
 
-- [🛡️ MobileGuard](#-mobileguard)
+- [🛡️ Spectra](#-Spectra)
   - [✨ Key Features](#-key-features)
   - [🏗️ Architecture](#-architecture)
   - [🛠️ Tech Stack](#-tech-stack)
@@ -22,15 +22,15 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# 🛡️ MobileGuard
+# 🛡️ Spectra
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/MobileGuard)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/yourusername/Spectra)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![React Native](https://img.shields.io/badge/React_Native-0.73-61DAFB.svg)](https://reactnative.dev/)
 [![Security Rules](https://img.shields.io/badge/Security_Rules-1/26-critical)](FUNCTIONS_PROGRESS.md)
 
-**MobileGuard** is a no-root mobile HTTP traffic inspector and passive security scanner for Android and iOS. Built with React Native, it combines a local MitM proxy with a powerful security rule engine to identify vulnerabilities in mobile app traffic in real-time.
+**Spectra** is a no-root mobile HTTP traffic inspector and passive security scanner for Android and iOS. Built with React Native, it combines a local MitM proxy with a powerful security rule engine to identify vulnerabilities in mobile app traffic in real-time.
 
 <!-- START-GIT-RECO-LIST -->
 <!-- TOC -->
@@ -52,7 +52,7 @@
 
 ```mermaid
 graph TD
-    A[Mobile Apps] -->|HTTP/S| B(MobileGuard VPN/Proxy)
+    A[Mobile Apps] -->|HTTP/S| B(Spectra VPN/Proxy)
     B -->|Decrypted Traffic| C{Rule Engine}
     C -->|Finding| D[Security Report]
     C -->|Raw Data| E[(Local Storage)]
