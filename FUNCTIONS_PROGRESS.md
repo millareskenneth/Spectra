@@ -4,13 +4,13 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 
 ## Request Rules
 - [x] REQ-001: API key or secret in URL query parameter
-- [ ] REQ-002: Password in URL query parameter
-- [ ] REQ-003: AWS credential pattern detected
-- [ ] REQ-004: Authorization token sent over plain HTTP
-- [ ] REQ-005: Private key pattern in request body
+- [x] REQ-002: Password in URL query parameter
+- [x] REQ-003: AWS credential pattern detected
+- [x] REQ-004: Authorization token sent over plain HTTP
+- [x] REQ-005: Private key pattern in request body
 
 ## Response Rules
-- [ ] RES-001: Stack trace in response body
+- [x] RES-001: Stack trace in response body
 - [ ] RES-002: Internal server paths exposed
 - [ ] RES-003: Auth endpoint returns sensitive fields
 - [ ] RES-004: Response contains excessive user PII
