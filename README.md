@@ -28,7 +28,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![React Native](https://img.shields.io/badge/React_Native-0.73-61DAFB.svg)](https://reactnative.dev/)
-[![Security Rules](https://img.shields.io/badge/Security_Rules-7/26-critical)](FUNCTIONS_PROGRESS.md)
+[![Security Rules](https://img.shields.io/badge/Security_Rules-8/26-critical)](FUNCTIONS_PROGRESS.md)
 
 **MobileGuard** is a no-root mobile HTTP traffic inspector and passive security scanner for Android and iOS. Built with React Native, it combines a local MitM proxy with a powerful security rule engine to identify vulnerabilities in mobile app traffic in real-time.
 
@@ -115,7 +115,7 @@ Below is the current status of the security rule implementation. This section is
 ## Response Rules
 - [x] RES-001: Stack trace in response body
 - [x] RES-002: Internal server paths exposed
-- [ ] RES-003: Auth endpoint returns sensitive fields
+- [x] RES-003: Auth endpoint returns sensitive fields
 - [ ] RES-004: Response contains excessive user PII
 - [ ] RES-005: DB internals leaked
 - [ ] RES-006: Server technology fingerprint

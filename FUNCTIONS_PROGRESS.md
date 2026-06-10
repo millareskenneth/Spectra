@@ -12,7 +12,7 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 ## Response Rules
 - [x] RES-001: Stack trace in response body
 - [x] RES-002: Internal server paths exposed
-- [ ] RES-003: Auth endpoint returns sensitive fields
+- [x] RES-003: Auth endpoint returns sensitive fields
 - [ ] RES-004: Response contains excessive user PII
 - [ ] RES-005: DB internals leaked
 - [ ] RES-006: Server technology fingerprint
