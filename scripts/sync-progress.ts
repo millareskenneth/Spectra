@@ -1,9 +1,11 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-const PROGRESS_FILE = 'FUNCTIONS_PROGRESS.md';
-const README_FILE = path.join(__dirname, '../../README.md');
-const RULES_DIR = 'src/engine/security/rules';
+// Use process.cwd() to be environment-agnostic (ESM or CJS)
+const PROJECT_ROOT = process.cwd();
+const PROGRESS_FILE = path.join(PROJECT_ROOT, 'FUNCTIONS_PROGRESS.md');
+const README_FILE = path.join(PROJECT_ROOT, 'README.md');
+const RULES_DIR = path.join(PROJECT_ROOT, 'src/engine/security/rules');
 
 function syncProgress() {
   if (!fs.existsSync(PROGRESS_FILE)) {
@@ -39,6 +41,8 @@ function syncProgress() {
     
     // Extract checklist from progress file
     const checklistStart = finalProgressContent.indexOf('## Request Rules');
+    if (checklistStart === -1) return;
+    
     const checklist = finalProgressContent.substring(checklistStart);
 
     const startMarker = '<!-- START-RULES-PROGRESS -->';
@@ -50,7 +54,7 @@ function syncProgress() {
     if (startIndex !== -1 && endIndex !== -1) {
       const before = readmeContent.substring(0, startIndex + startMarker.length);
       const after = readmeContent.substring(endIndex);
-      const newReadmeContent = `${before}\n${checklist}\n${after}`;
+      const newReadmeContent = `${before}\n\n${checklist}\n\n${after}`;
       
       // Update the badge too
       const totalRules = (finalProgressContent.match(/- \[( |x)\]/g) || []).length;
