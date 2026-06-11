@@ -28,7 +28,7 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 ## JWT Rules
 - [x] JWT-001: alg: none
 - [x] JWT-002: missing exp claim
-- [ ] JWT-003: sensitive PII in payload
+- [x] JWT-003: sensitive PII in payload
 - [ ] JWT-004: sent over plain HTTP
 
 ## Cookie Rules
