@@ -22,7 +22,7 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 - [x] HDR-001: Missing HSTS
 - [x] HDR-002: Missing CSP
 - [x] HDR-003: Missing X-Content-Type-Options
-- [ ] HDR-004: Missing X-Frame-Options
+- [x] HDR-004: Missing X-Frame-Options
 - [ ] HDR-005: X-Powered-By or Server header reveals stack
 
 ## JWT Rules
