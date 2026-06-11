@@ -28,7 +28,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![React Native](https://img.shields.io/badge/React_Native-0.73-61DAFB.svg)](https://reactnative.dev/)
-[![Security Rules](https://img.shields.io/badge/Security_Rules-10/26-critical)](FUNCTIONS_PROGRESS.md)
+[![Security Rules](https://img.shields.io/badge/Security_Rules-26/26-critical)](FUNCTIONS_PROGRESS.md)
 
 **MobileGuard** is a no-root mobile HTTP traffic inspector and passive security scanner for Android and iOS. Built with React Native, it combines a local MitM proxy with a powerful security rule engine to identify vulnerabilities in mobile app traffic in real-time.
 
@@ -118,30 +118,30 @@ Below is the current status of the security rule implementation. This section is
 - [x] RES-003: Auth endpoint returns sensitive fields
 - [x] RES-004: Response contains excessive user PII
 - [x] RES-005: DB internals leaked
-- [ ] RES-006: Server technology fingerprint
-- [ ] RES-007: Response returns full DB row on login/profile
+- [x] RES-006: Server technology fingerprint
+- [x] RES-007: Response returns full DB row on login/profile
 
 ## Header Rules
-- [ ] HDR-001: Missing HSTS
-- [ ] HDR-002: Missing CSP
-- [ ] HDR-003: Missing X-Content-Type-Options
-- [ ] HDR-004: Missing X-Frame-Options
-- [ ] HDR-005: X-Powered-By or Server header reveals stack
+- [x] HDR-001: Missing HSTS
+- [x] HDR-002: Missing CSP
+- [x] HDR-003: Missing X-Content-Type-Options
+- [x] HDR-004: Missing X-Frame-Options
+- [x] HDR-005: X-Powered-By or Server header reveals stack
 
 ## JWT Rules
-- [ ] JWT-001: alg: none
-- [ ] JWT-002: missing exp claim
-- [ ] JWT-003: sensitive PII in payload
-- [ ] JWT-004: sent over plain HTTP
+- [x] JWT-001: alg: none
+- [x] JWT-002: missing exp claim
+- [x] JWT-003: sensitive PII in payload
+- [x] JWT-004: sent over plain HTTP
 
 ## Cookie Rules
-- [ ] COK-001: missing Secure flag
-- [ ] COK-002: missing HttpOnly flag
-- [ ] COK-003: missing SameSite attribute
+- [x] COK-001: missing Secure flag
+- [x] COK-002: missing HttpOnly flag
+- [x] COK-003: missing SameSite attribute
 
 ## TLS Rules
-- [ ] TLS-001: HTTPS endpoint falls back to HTTP redirect
-- [ ] TLS-002: Certificate pinning detected
+- [x] TLS-001: HTTPS endpoint falls back to HTTP redirect
+- [x] TLS-002: Certificate pinning detected
 
 
 <!-- END-RULES-PROGRESS -->
