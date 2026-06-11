@@ -38,4 +38,4 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 
 ## TLS Rules
 - [x] TLS-001: HTTPS endpoint falls back to HTTP redirect
-- [ ] TLS-002: Certificate pinning detected
+- [x] TLS-002: Certificate pinning detected
