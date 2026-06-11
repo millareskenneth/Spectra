@@ -33,7 +33,7 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 
 ## Cookie Rules
 - [x] COK-001: missing Secure flag
-- [ ] COK-002: missing HttpOnly flag
+- [x] COK-002: missing HttpOnly flag
 - [ ] COK-003: missing SameSite attribute
 
 ## TLS Rules
