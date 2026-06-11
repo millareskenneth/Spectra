@@ -29,7 +29,7 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 - [x] JWT-001: alg: none
 - [x] JWT-002: missing exp claim
 - [x] JWT-003: sensitive PII in payload
-- [ ] JWT-004: sent over plain HTTP
+- [x] JWT-004: sent over plain HTTP
 
 ## Cookie Rules
 - [ ] COK-001: missing Secure flag
