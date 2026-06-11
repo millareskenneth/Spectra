@@ -37,5 +37,5 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 - [x] COK-003: missing SameSite attribute
 
 ## TLS Rules
-- [ ] TLS-001: HTTPS endpoint falls back to HTTP redirect
+- [x] TLS-001: HTTPS endpoint falls back to HTTP redirect
 - [ ] TLS-002: Certificate pinning detected
