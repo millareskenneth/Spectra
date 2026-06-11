@@ -19,7 +19,7 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 - [x] RES-007: Response returns full DB row on login/profile
 
 ## Header Rules
-- [ ] HDR-001: Missing HSTS
+- [x] HDR-001: Missing HSTS
 - [ ] HDR-002: Missing CSP
 - [ ] HDR-003: Missing X-Content-Type-Options
 - [ ] HDR-004: Missing X-Frame-Options
