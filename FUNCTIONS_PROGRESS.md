@@ -15,7 +15,7 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 - [x] RES-003: Auth endpoint returns sensitive fields
 - [x] RES-004: Response contains excessive user PII
 - [x] RES-005: DB internals leaked
-- [ ] RES-006: Server technology fingerprint
+- [x] RES-006: Server technology fingerprint
 - [ ] RES-007: Response returns full DB row on login/profile
 
 ## Header Rules
