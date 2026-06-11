@@ -90,7 +90,7 @@ cd Spectra && npm install
 
 # Clone and install frontend (in a sibling directory)
 cd ..
-git clone https://github.com/millareskenneth/it-asset-inventory-mobile.git "Spectra Frontend"
+git clone https://github.com/millareskenneth/repo-not-accessible.git "Spectra Frontend"
 cd "Spectra Frontend" && npm install
 ```
 
