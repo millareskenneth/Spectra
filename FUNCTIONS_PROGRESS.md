@@ -16,7 +16,7 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 - [x] RES-004: Response contains excessive user PII
 - [x] RES-005: DB internals leaked
 - [x] RES-006: Server technology fingerprint
-- [ ] RES-007: Response returns full DB row on login/profile
+- [x] RES-007: Response returns full DB row on login/profile
 
 ## Header Rules
 - [ ] HDR-001: Missing HSTS
