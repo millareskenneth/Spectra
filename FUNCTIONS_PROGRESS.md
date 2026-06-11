@@ -32,7 +32,7 @@ This checklist is automatically updated by `scripts/sync-progress.ts`.
 - [x] JWT-004: sent over plain HTTP
 
 ## Cookie Rules
-- [ ] COK-001: missing Secure flag
+- [x] COK-001: missing Secure flag
 - [ ] COK-002: missing HttpOnly flag
 - [ ] COK-003: missing SameSite attribute
 
