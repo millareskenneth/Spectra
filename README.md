@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## 📋 Table of Contents
 
-- [🛡️ Spectra](#-Spectra)
+- [🛡️ Spectra](#-spectra)
   - [✨ Key Features](#-key-features)
   - [🏗️ Architecture](#-architecture)
   - [🛠️ Tech Stack](#-tech-stack)
