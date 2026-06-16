@@ -9,7 +9,7 @@ export const TLS_002: SecurityRule = {
   recommendation: 'Certificate pinning is a security feature that prevents interception. To inspect traffic for this app, you may need to use a pinning bypass tool (like Frida or a patched APK) on a rooted device.',
   check: (req, res): SecurityFinding | null => {
     /**
-     * In the context of MobileGuard, pinning is usually detected at the engine level 
+     * In the context of Spectra, pinning is usually detected at the engine level 
      * (e.g., when the TLS handshake fails because the client closes the connection).
      * However, for the rule engine, we might flag it if we see a 0 status code or a specific 
      * error indicator in the capture metadata (if the engine provides it).

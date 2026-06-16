@@ -7,7 +7,7 @@ export const createMockRequest = (overrides: Partial<CapturedRequest> = {}): Cap
   url: 'https://api.example.com/v1/user',
   headers: {
     'Accept': 'application/json',
-    'User-Agent': 'MobileGuard/1.0'
+    'User-Agent': 'Spectra/1.0'
   },
   body: null,
   ...overrides,
